@@ -22,10 +22,11 @@ devtools::install_github('sndean/knitr1', build_vignettes = TRUE)
 ```
 
 Using Kona and APL:
+
+```{kona, engine.path = '/Users/snd/kona/k'}
+1 + 1 2 3
 ```
-kona, engine.path = '/home/snd/kona/k'
-a:1 2 3
-```
+
 will yield #1 2 3
 
 You can also install the development version from
