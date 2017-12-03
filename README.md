@@ -1,4 +1,4 @@
-# knitr
+# knitr1
 
 [![Build Status](https://travis-ci.org/yihui/knitr.svg)](https://travis-ci.org/yihui/knitr)
 [![Coverage Status](https://coveralls.io/repos/yihui/knitr/badge.svg?branch=master&service=github)](https://coveralls.io/github/yihui/knitr?branch=master)
@@ -18,8 +18,15 @@ You can install the stable version on
 [CRAN](https://cran.rstudio.org/package=knitr):
 
 ```r
-install.packages('knitr', dependencies = TRUE)
+install.packages('knitr1', dependencies = TRUE)
 ```
+
+Using Kona and APL:
+```
+kona, engine.path = '/home/snd/kona/k'
+a:1 2 3
+```
+will yield #1 2 3
 
 You can also install the development version from
 [XRAN](https://xran.yihui.name), which provides daily build of **knitr**:
