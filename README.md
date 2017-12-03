@@ -18,7 +18,7 @@ You can install the stable version on
 [CRAN](https://cran.rstudio.org/package=knitr):
 
 ```r
-install.packages('knitr1', dependencies = TRUE)
+devtools::install_github('sndean/knitr1', build_vignettes = TRUE)
 ```
 
 Using Kona and APL:
