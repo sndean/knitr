@@ -1,17 +1,5 @@
 # knitr1
 
-[![Build Status](https://travis-ci.org/yihui/knitr.svg)](https://travis-ci.org/yihui/knitr)
-[![Coverage Status](https://coveralls.io/repos/yihui/knitr/badge.svg?branch=master&service=github)](https://coveralls.io/github/yihui/knitr?branch=master)
-[![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/knitr)](https://cran.rstudio.org/package=knitr)
-
-The R package **knitr** is a general-purpose literate programming engine,
-with lightweight API's designed to give users full control of the output
-without heavy coding work. It combines many features into one package with
-slight tweaks motivated from my everyday use of Sweave. See the package
-[homepage](https://yihui.name/knitr/) for details and examples. See
-[FAQ's](https://github.com/yihui/knitr/blob/master/FAQ.md) for a list of
-frequently asked questions (including where to ask questions).
-
 ## Installation
 
 You can install the stable version on
@@ -20,14 +8,12 @@ You can install the stable version on
 ```r
 devtools::install_github('sndean/knitr1', build_vignettes = TRUE)
 ```
+Using Kona within RStudio use the code chunk header: {kona, engine.path = '/Users/snd/kona/k'}
 
-Using Kona and APL:
+After this, ```1 + 1 2 3``` will yield ```#2 3 4```
 
-```{kona, engine.path = '/Users/snd/kona/k'}
-1 + 1 2 3
-```
 
-will yield #1 2 3
+
 
 You can also install the development version from
 [XRAN](https://xran.yihui.name), which provides daily build of **knitr**:
