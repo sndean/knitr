@@ -118,7 +118,7 @@ eng_interpreted = function(options) {
       f
     )
   } else paste(switch(
-    engine, bash = '-c', coffee = '-e', groovy = '-e', kona = '-x', lein = 'exec -ep',
+    engine, bash = '-c', coffee = '-e', groovy = '-e', j = '-js', kona = '-x', lein = 'exec -ep',
     mysql = '-e', node = '-e', octave = '--eval', perl = '-e', psql = '-c',
     python = '-c', ruby = '-e', scala = '-e', sh = '-c', zsh = '-c', NULL
   ), shQuote(paste(options$code, collapse = '\n')))
@@ -620,7 +620,7 @@ eng_go = function(options) {
 # set engines for interpreted languages
 local({
   for (i in c(
-    'awk', 'bash', 'coffee', 'gawk', 'groovy', 'haskell', 'kona', 'lein', 'mysql',
+    'awk', 'bash', 'coffee', 'gawk', 'groovy', 'haskell', 'j', 'kona', 'lein', 'mysql',
     'node', 'octave', 'perl', 'psql', 'Rscript', 'ruby', 'sas',
     'scala', 'sed', 'sh', 'stata', 'zsh'
   )) knit_engines$set(setNames(list(eng_interpreted), i))
